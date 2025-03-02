@@ -2,7 +2,7 @@ import "./product.css"
 
 function Product({title,features=[],price=10}){
     let list=features.map((feature,index)=><li key={index}>{feature}</li>)
-    let styles={backgroundColor:price>30000?"wheat":""};
+    let styles={backgroundColor:price>30000?"grey":""};
     return(
         <div style={styles} className="Product">
             <h2>{title}</h2>
